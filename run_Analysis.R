@@ -94,5 +94,4 @@ tidyData<-HAR%>%
         summarise_all(mean)
 
 #SAVE the Tidy Data
-write.table(tidyData,file = "./tidyData.txt",row.names = TRUE,
-          sep = " ")
+write.table(tidyData,file = "./tidyData.txt",row.names = FALSE,sep = " ")
